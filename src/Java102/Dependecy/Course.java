@@ -1,0 +1,48 @@
+package Java102.Dependecy;
+
+public class Course {
+
+    private String courseName;
+    private String code;
+    // Dersin bir ogretmeni vardir - ogretmen class
+    private Instructor instructor;
+
+    public Course(String courseName, String code, Instructor instructor) {
+        this.courseName = courseName;
+        this.code = code;
+        this.instructor = instructor;
+    }
+
+    public String getCourseName() {
+        return this.courseName;
+    }
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+
+    public String code() {
+        return this.code;
+    }
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+
+    public Instructor getInstructor() {
+        return this.instructor;
+    }
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
+
+    public double calcAvarage(Student[] students) {
+
+        double avarage = 0.0;
+        for(Student student : students) {
+            avarage += student.getNote();
+        }
+        return avarage / students.length;
+    }
+}
