@@ -23,5 +23,4 @@ public class GuvenlikGorevlisi extends Memur {
     public void nobet() {
         System.out.println(getFullName() + " nobetci guvenlik gorevlisi.");
     }
-
 }
