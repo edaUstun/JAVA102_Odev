@@ -18,7 +18,7 @@ public class Main {
         System.out.println(animal3.talk());
 
         Animal animal4 = new Horse("Hiper");
-        System.out.println(animal4.talk());
+        //System.out.println(animal4.talk());
 
         talking(new Cat("Nasip"));
         talking(new Dog("Karabas"));
