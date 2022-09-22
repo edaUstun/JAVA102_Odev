@@ -3,12 +3,14 @@ package MaceraOyunu.Location.BattleLoc;
 
 import MaceraOyunu.Location.Location;
 import MaceraOyunu.Obstacle.Obstacle;
+import MaceraOyunu.Player;
 
 public abstract class BattleLoc extends Location {
 
     private Obstacle obstacle;
 
-    public BattleLoc(Obstacle obstacle) {
+    public BattleLoc(Obstacle obstacle, Player player) {
+        super(player, "D");
         this.obstacle = obstacle;
     }
 
