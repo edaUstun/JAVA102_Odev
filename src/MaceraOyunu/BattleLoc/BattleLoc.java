@@ -1,8 +1,8 @@
-package Java102.MaceraOyunu.BattleLoc;
+package MaceraOyunu.BattleLoc;
 
 
-import Java102.MaceraOyunu.Location;
-import Java102.MaceraOyunu.Obstacle.Obstacle;
+import MaceraOyunu.Location;
+import MaceraOyunu.Obstacle.Obstacle;
 
 public abstract class BattleLoc extends Location {
 

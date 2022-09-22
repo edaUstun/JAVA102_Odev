@@ -1,4 +1,4 @@
-package Java102.MaceraOyunu;
+package MaceraOyunu;
 
 public class Inventory {
 

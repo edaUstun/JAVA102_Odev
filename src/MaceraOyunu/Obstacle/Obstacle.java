@@ -1,4 +1,4 @@
-package Java102.MaceraOyunu.Obstacle;
+package MaceraOyunu.Obstacle;
 
 public class Obstacle {
 

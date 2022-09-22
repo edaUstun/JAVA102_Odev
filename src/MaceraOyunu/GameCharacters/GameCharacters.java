@@ -1,4 +1,4 @@
-package Java102.MaceraOyunu.GameCharacters;
+package MaceraOyunu.GameCharacters;
 
 public abstract class GameCharacters {
 

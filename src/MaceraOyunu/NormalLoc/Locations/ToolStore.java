@@ -1,6 +1,6 @@
-package Java102.MaceraOyunu.NormalLoc.Locations;
+package MaceraOyunu.NormalLoc.Locations;
 
-import Java102.MaceraOyunu.NormalLoc.NormalLoc;
+import MaceraOyunu.NormalLoc.NormalLoc;
 
 public class ToolStore extends NormalLoc {
 

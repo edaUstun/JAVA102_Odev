@@ -1,9 +1,9 @@
-package Java102.MaceraOyunu;
+package MaceraOyunu;
 
-import Java102.MaceraOyunu.GameCharacters.GameCharacters;
-import Java102.MaceraOyunu.GameCharacters.characters.Archer;
-import Java102.MaceraOyunu.GameCharacters.characters.Knight;
-import Java102.MaceraOyunu.GameCharacters.characters.Samurai;
+import MaceraOyunu.GameCharacters.GameCharacters;
+import MaceraOyunu.GameCharacters.characters.Archer;
+import MaceraOyunu.GameCharacters.characters.Knight;
+import MaceraOyunu.GameCharacters.characters.Samurai;
 
 import java.util.Scanner;
 

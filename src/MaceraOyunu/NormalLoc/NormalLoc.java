@@ -1,6 +1,6 @@
-package Java102.MaceraOyunu.NormalLoc;
+package MaceraOyunu.NormalLoc;
 
-import Java102.MaceraOyunu.Location;
+import MaceraOyunu.Location;
 
 public abstract class NormalLoc extends Location {
 

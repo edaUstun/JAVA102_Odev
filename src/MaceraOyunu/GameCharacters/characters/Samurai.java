@@ -1,6 +1,6 @@
-package Java102.MaceraOyunu.GameCharacters.characters;
+package MaceraOyunu.GameCharacters.characters;
 
-import Java102.MaceraOyunu.GameCharacters.GameCharacters;
+import MaceraOyunu.GameCharacters.GameCharacters;
 
 public class Samurai extends GameCharacters {
 
