@@ -1,7 +1,7 @@
-package MaceraOyunu.BattleLoc;
+package MaceraOyunu.Location.BattleLoc;
 
 
-import MaceraOyunu.Location;
+import MaceraOyunu.Location.Location;
 import MaceraOyunu.Obstacle.Obstacle;
 
 public abstract class BattleLoc extends Location {

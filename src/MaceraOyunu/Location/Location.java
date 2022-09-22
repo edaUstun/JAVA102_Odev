@@ -1,13 +1,13 @@
-package MaceraOyunu;
+package MaceraOyunu.Location;
+
+import MaceraOyunu.Player;
 
 public abstract class Location {
 
     private Player player;
     private String name;
 
-
-    public void Location() {}
-    public void Location(Player player, String name) {
+    public Location(Player player, String name) {
         this.player = player;
         this.name = name;
     }

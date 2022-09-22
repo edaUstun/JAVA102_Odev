@@ -1,6 +1,6 @@
-package MaceraOyunu.BattleLoc.Locationes;
+package MaceraOyunu.Location.BattleLoc.Locationes;
 
-import MaceraOyunu.BattleLoc.BattleLoc;
+import MaceraOyunu.Location.BattleLoc.BattleLoc;
 import MaceraOyunu.Obstacle.Obstacle;
 
 public class Forest extends BattleLoc {
