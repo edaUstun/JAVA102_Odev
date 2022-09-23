@@ -1,5 +1,6 @@
 package Java102.Generics;
 
+import Java102.Generics.GenericInterface.Student;
 import Java102.Generics.GenericMetotlar.Print;
 import Java102.Generics.TypeNullable.NullableString;
 import Java102.Generics.TypeObjectNullable.NullableObjects;
@@ -74,10 +75,11 @@ public class Main {
             boolean value = (boolean) nullableBoolean.getValue();
             System.out.println(nullableBoolean.getValue());
         }
-         */
+
 
 
         // generic method
+
 
         String [] a = {"Java", "102", "Patika", "Dev"};
         Integer[] b = {1, 2, 3, 4};
@@ -89,6 +91,14 @@ public class Main {
         Print.printArray(b, "Sayilar");
         System.out.println("---------------------------------------------");
         Print.printArray(c, 1);
+         */
+
+        Student<String> student1 = new Student<>();
+        student1.insert("ABC");
+
+
+        Student<Integer> student2 = new Student<>();
+        student2.update(123);
 
     }
 }
