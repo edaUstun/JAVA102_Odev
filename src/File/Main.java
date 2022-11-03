@@ -2,12 +2,44 @@ package File;
 
 import java.io.FileInputStream;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
 public class Main {
     public static void main(String[] args) {
+
+        /*
+        --- FILE OUT STREAM ---
+        --- Veri Yazma --- --- Disariya Veri Verme ---
+        ==============================================
+         */
+
+        String name = "\nOutputStream\nPotato";
+        try {
+            // icerideki dosya adinda bir dosya yoksa Direkt Dosyayi olusuturur.
+            // yazdigimiz dosya var ise o dosyanin icindekileri SILER.
+            // FileOutputStream outputStream = new FileOutputStream("src/File/name.txt");
+
+            // icindeki degerleri silmesin diye true tanimlamasi yapilir - bu sekilde ustune baska verilerde yazabiliriz.
+            FileOutputStream outputStream = new FileOutputStream("src/File/name.txt", true);
+
+            byte[] nameArray = name.getBytes();
+
+            // tanimli dosya (name.txt) icine yazma islemi yapmak icin - byte array tipinde
+            outputStream.write(nameArray);
+            outputStream.close();
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
 
 
         /*
+
+        --- FILE IN STREAM ---
+        --- Veri Okuma --- --- Disaridan Veri Alma ---
+        ==============================================
         File dizin = new File("src/File/patika/dev");
 
         // mkdirs -> olmayan birden fazla dosya dizini icin kullanilir.
@@ -51,6 +83,7 @@ public class Main {
 
 
         // FileInputStream ve read() fonksiyonu
+
         try {
 
             // --Farkli bir kullanim--
