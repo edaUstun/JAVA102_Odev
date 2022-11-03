@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+        /*
         File dizin = new File("src/File/patika/dev");
 
         // mkdirs -> olmayan birden fazla dosya dizini icin kullanilir.
@@ -32,5 +33,16 @@ public class Main {
 
         // dosya silme - sildi ise true - silinmis ise false - dondurur
         //System.out.println(file.delete());
+         */
+
+        File dizin = new File("src/File/test");
+
+        // dizin.list() -> string dizi dondurur - string e esitledik
+        String[] list = dizin.list();
+
+        // bu sekilde o dizindeki elemanlari verir.
+        for(String str : list) {
+            System.out.println(str);
+        }
     }
 }
