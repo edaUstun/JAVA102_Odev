@@ -38,7 +38,7 @@ public class Main {
         /*
 
         --- FILE IN STREAM ---
-        --- Veri Okuma --- --- Disaridan Veri Alma ---
+        --- Veri Okuma --- --- Disaridan Veri Alma  ---
         ==============================================
         File dizin = new File("src/File/patika/dev");
 
