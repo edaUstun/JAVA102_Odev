@@ -1,10 +1,10 @@
 package File;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.FileInputStream;
 
 public class Main {
     public static void main(String[] args) {
+
 
 
         /*
@@ -18,6 +18,7 @@ public class Main {
         // System.out.println(dizin.mkdir());
 
 
+        // --- Dosya Olusturma ---
         File file = new File("src/File/test/name.txt");
 
         try {
@@ -33,8 +34,10 @@ public class Main {
 
         // dosya silme - sildi ise true - silinmis ise false - dondurur
         //System.out.println(file.delete());
-         */
 
+
+
+        // --- Dizin Ekleme ----
         File dizin = new File("src/File/test");
 
         // dizin.list() -> string dizi dondurur - string e esitledik
@@ -44,5 +47,54 @@ public class Main {
         for(String str : list) {
             System.out.println(str);
         }
+
+
+
+        // FileInputStream ve read() fonksiyonu
+        try {
+
+            // --Farkli bir kullanim--
+
+            // File file = new File("src/File/patika.txt");
+            // FileInputStream input = new FileInputStream(file);
+
+            FileInputStream fileInput = new FileInputStream("src/File/patika.txt");
+
+            // input.read() -> dosyanin icindeki ilk degerin input degerini verir.
+            // System.out.println(input.read());
+
+
+            // File icindeki degerleri byte byte okuma
+            int i = fileInput.read();
+
+            // input.skip(10) -> (10. karakterden baslamak) istenilen karakterden yazdirmaya baslamak icin
+            while (i != -1) {
+                System.out.print((char) i);
+                i = fileInput.read();
+            }
+            fileInput.close();
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+
+        // --- AVAILABLE ---
+        try {
+            FileInputStream fileInput = new FileInputStream("src/File/patika.txt");
+
+            // fileInput.available() -> dosya icindeki byte sayisini verir.
+            System.out.println("Kullanilabilir byte sayisi " + fileInput.available());
+
+            fileInput.close();
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+
+         */
+
+
     }
 }
