@@ -1,0 +1,8 @@
+1 - Do i need the ordering to remain?
+2 - Do i have null keys/values?
+3 - Does it allow duplicate elements?
+4 - Will it be accessed by multiple threads?
+5 - Do i need a key/value pair?
+6 - Will i need random access?
+7 - Does it allow accessing elements by index?
+8 - Does it offer fast adding and fast removing elements?
